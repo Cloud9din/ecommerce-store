@@ -1,156 +1,323 @@
 // =====================================================
-// SHOPSPHERE — MODERN E-COMMERCE STORE
+// SHOPSPHERE — REALISTIC E-COMMERCE STORE
 // =====================================================
 
 
 // =====================================================
-// PRODUCTS
+// PRODUCT DATA
 // =====================================================
 
 const products = [
 
   {
     id: 1,
-    name: "Nova Wireless Headphones",
-    category: "audio",
-    price: 79.99,
-    rating: 4.9,
-    icon: "🎧",
-    badge: "Best Seller",
+
+    name:
+      "Nova Wireless Headphones",
+
+    category:
+      "audio",
+
+    price:
+      79.99,
+
+    rating:
+      4.9,
+
+    badge:
+      "Best Seller",
+
+    image:
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "Premium wireless headphones with comfortable cushioning, clear sound and long battery life."
+      "Comfortable wireless over-ear headphones with rich sound, a clean modern finish and long-lasting battery life."
   },
+
 
   {
     id: 2,
-    name: "Pulse Mini Speaker",
-    category: "audio",
-    price: 49.99,
-    rating: 4.7,
-    icon: "🔊",
-    badge: "Popular",
+
+    name:
+      "Pulse Bluetooth Speaker",
+
+    category:
+      "audio",
+
+    price:
+      49.99,
+
+    rating:
+      4.7,
+
+    badge:
+      "Popular",
+
+    image:
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "Compact wireless speaker delivering rich sound in a portable modern design."
+      "Portable wireless speaker designed for clear audio, everyday listening and easy travel."
   },
+
 
   {
     id: 3,
-    name: "Orbit Smart Watch",
-    category: "technology",
-    price: 129.99,
-    rating: 4.8,
-    icon: "⌚",
-    badge: "New",
+
+    name:
+      "Orbit Smart Watch",
+
+    category:
+      "technology",
+
+    price:
+      129.99,
+
+    rating:
+      4.8,
+
+    badge:
+      "New",
+
+    image:
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "A modern smart watch with activity tracking, notifications and an elegant display."
+      "A lightweight smart watch with activity tracking, notifications and a clean everyday design."
   },
+
 
   {
     id: 4,
-    name: "Aero Laptop Stand",
-    category: "technology",
-    price: 39.99,
-    rating: 4.6,
-    icon: "💻",
-    badge: "",
+
+    name:
+      "Aero Laptop Stand",
+
+    category:
+      "technology",
+
+    price:
+      39.99,
+
+    rating:
+      4.6,
+
+    badge:
+      "",
+
+    image:
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "An adjustable laptop stand designed to improve comfort and create a cleaner workspace."
+      "An adjustable desktop solution designed to improve posture and create a cleaner working environment."
   },
+
 
   {
     id: 5,
-    name: "Flux Wireless Charger",
-    category: "technology",
-    price: 29.99,
-    rating: 4.5,
-    icon: "🔋",
-    badge: "",
+
+    name:
+      "Flux Wireless Charger",
+
+    category:
+      "technology",
+
+    price:
+      29.99,
+
+    rating:
+      4.5,
+
+    badge:
+      "",
+
+    image:
+      "https://images.unsplash.com/photo-1587033411391-5d9e51cce126?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "Fast and convenient wireless charging with a minimal desk-friendly design."
+      "A compact wireless charging solution designed for modern desks, bedside tables and everyday use."
   },
+
 
   {
     id: 6,
-    name: "Studio Everyday Hoodie",
-    category: "fashion",
-    price: 54.99,
-    rating: 4.8,
-    icon: "🧥",
-    badge: "Trending",
+
+    name:
+      "Studio Everyday Hoodie",
+
+    category:
+      "fashion",
+
+    price:
+      54.99,
+
+    rating:
+      4.8,
+
+    badge:
+      "Trending",
+
+    image:
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "A comfortable everyday hoodie with a clean contemporary style."
+      "A comfortable everyday hoodie with a relaxed fit and clean contemporary styling."
   },
+
 
   {
     id: 7,
-    name: "Classic Urban Cap",
-    category: "fashion",
-    price: 24.99,
-    rating: 4.5,
-    icon: "🧢",
-    badge: "",
+
+    name:
+      "Classic Urban Cap",
+
+    category:
+      "fashion",
+
+    price:
+      24.99,
+
+    rating:
+      4.5,
+
+    badge:
+      "",
+
+    image:
+      "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "A simple everyday cap designed for casual wear and effortless styling."
+      "A lightweight everyday cap designed for casual wear with a simple understated look."
   },
+
 
   {
     id: 8,
-    name: "Metro Travel Backpack",
-    category: "fashion",
-    price: 44.99,
-    rating: 4.7,
-    icon: "🎒",
-    badge: "Popular",
+
+    name:
+      "Metro Travel Backpack",
+
+    category:
+      "fashion",
+
+    price:
+      44.99,
+
+    rating:
+      4.7,
+
+    badge:
+      "Popular",
+
+    image:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "A practical backpack with spacious compartments for work, travel and daily use."
+      "A practical backpack with generous storage for commuting, work, university and weekend travel."
   },
+
 
   {
     id: 9,
-    name: "Halo Desk Lamp",
-    category: "home",
-    price: 59.99,
-    rating: 4.8,
-    icon: "💡",
-    badge: "New",
+
+    name:
+      "Halo Desk Lamp",
+
+    category:
+      "home",
+
+    price:
+      59.99,
+
+    rating:
+      4.8,
+
+    badge:
+      "New",
+
+    image:
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "A contemporary desk lamp with soft lighting and a modern minimal shape."
+      "A minimal desk lamp providing comfortable ambient lighting for workspaces and reading areas."
   },
+
 
   {
     id: 10,
-    name: "Cloud Comfort Cushion",
-    category: "home",
-    price: 27.99,
-    rating: 4.6,
-    icon: "🛋️",
-    badge: "",
+
+    name:
+      "Cloud Comfort Cushion",
+
+    category:
+      "home",
+
+    price:
+      27.99,
+
+    rating:
+      4.6,
+
+    badge:
+      "",
+
+    image:
+      "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "A soft decorative cushion designed to bring extra comfort to your living space."
+      "A soft decorative cushion created to bring comfort and texture to modern living spaces."
   },
+
 
   {
     id: 11,
-    name: "Nordic Coffee Mug",
-    category: "home",
-    price: 18.99,
-    rating: 4.7,
-    icon: "☕",
-    badge: "",
+
+    name:
+      "Nordic Ceramic Mug",
+
+    category:
+      "home",
+
+    price:
+      18.99,
+
+    rating:
+      4.7,
+
+    badge:
+      "",
+
+    image:
+      "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "A simple ceramic mug inspired by clean Scandinavian design."
+      "A clean ceramic mug inspired by Scandinavian styling and made for coffee, tea and everyday use."
   },
+
 
   {
     id: 12,
-    name: "Echo Wireless Earbuds",
-    category: "audio",
-    price: 64.99,
-    rating: 4.8,
-    icon: "🎵",
-    badge: "Best Seller",
+
+    name:
+      "Echo Wireless Earbuds",
+
+    category:
+      "audio",
+
+    price:
+      64.99,
+
+    rating:
+      4.8,
+
+    badge:
+      "Best Seller",
+
+    image:
+      "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85",
+
     description:
-      "Compact wireless earbuds offering clear audio, comfortable fit and easy everyday use."
+      "Compact wireless earbuds offering comfortable listening, simple controls and clear everyday audio."
   }
 
 ];
@@ -165,20 +332,24 @@ const productGrid =
     "product-grid"
   );
 
+
 const productSearch =
   document.getElementById(
     "product-search"
   );
+
 
 const productCount =
   document.getElementById(
     "product-count"
   );
 
+
 const sortProducts =
   document.getElementById(
     "sort-products"
   );
+
 
 const noProducts =
   document.getElementById(
@@ -192,40 +363,49 @@ const categoryButtons =
   );
 
 
+// Cart
+
 const cartButton =
   document.getElementById(
     "cart-button"
   );
+
 
 const cartDrawer =
   document.getElementById(
     "cart-drawer"
   );
 
+
 const closeCartButton =
   document.getElementById(
     "close-cart"
   );
+
 
 const cartItems =
   document.getElementById(
     "cart-items"
   );
 
+
 const emptyCart =
   document.getElementById(
     "empty-cart"
   );
+
 
 const cartCount =
   document.getElementById(
     "cart-count"
   );
 
+
 const cartSubtotal =
   document.getElementById(
     "cart-subtotal"
   );
+
 
 const checkoutButton =
   document.getElementById(
@@ -233,30 +413,37 @@ const checkoutButton =
   );
 
 
+// Wishlist
+
 const wishlistButton =
   document.getElementById(
     "wishlist-button"
   );
+
 
 const wishlistDrawer =
   document.getElementById(
     "wishlist-drawer"
   );
 
+
 const closeWishlistButton =
   document.getElementById(
     "close-wishlist"
   );
+
 
 const wishlistItems =
   document.getElementById(
     "wishlist-items"
   );
 
+
 const emptyWishlist =
   document.getElementById(
     "empty-wishlist"
   );
+
 
 const wishlistCount =
   document.getElementById(
@@ -264,21 +451,27 @@ const wishlistCount =
   );
 
 
+// Overlay
+
 const drawerOverlay =
   document.getElementById(
     "drawer-overlay"
   );
 
 
+// Product Modal
+
 const productModal =
   document.getElementById(
     "product-modal"
   );
 
+
 const productModalContent =
   document.getElementById(
     "product-modal-content"
   );
+
 
 const closeProductModal =
   document.getElementById(
@@ -286,20 +479,25 @@ const closeProductModal =
   );
 
 
+// Search Overlay
+
 const searchToggle =
   document.getElementById(
     "search-toggle"
   );
+
 
 const searchOverlay =
   document.getElementById(
     "search-overlay"
   );
 
+
 const closeSearch =
   document.getElementById(
     "close-search"
   );
+
 
 const globalSearchInput =
   document.getElementById(
@@ -307,10 +505,13 @@ const globalSearchInput =
   );
 
 
+// Mobile Menu
+
 const mobileMenuButton =
   document.getElementById(
     "mobile-menu-button"
   );
+
 
 const mobileMenu =
   document.getElementById(
@@ -318,18 +519,29 @@ const mobileMenu =
   );
 
 
+// Toast
+
 const toast =
   document.getElementById(
     "toast"
   );
 
 
+// Hero
+
+const heroImage =
+  document.querySelector(
+    ".hero-product-image img"
+  );
+
+
 // =====================================================
-// STORAGE
+// LOCAL STORAGE
 // =====================================================
 
 const CART_KEY =
   "shopsphereCart";
+
 
 const WISHLIST_KEY =
   "shopsphereWishlist";
@@ -342,11 +554,14 @@ const WISHLIST_KEY =
 let selectedCategory =
   "all";
 
+
 let searchTerm =
   "";
 
+
 let sortMode =
   "featured";
+
 
 let cart =
   loadStorage(
@@ -354,17 +569,19 @@ let cart =
     []
   );
 
+
 let wishlist =
   loadStorage(
     WISHLIST_KEY,
     []
   );
 
+
 let toastTimer;
 
 
 // =====================================================
-// STORAGE HELPERS
+// STORAGE
 // =====================================================
 
 function loadStorage(
@@ -374,18 +591,32 @@ function loadStorage(
 
   try {
 
-    const data =
-      JSON.parse(
-        localStorage.getItem(
-          key
-        )
+    const saved =
+      localStorage.getItem(
+        key
       );
 
-    return data || fallback;
+
+    if (!saved) {
+
+      return fallback;
+
+    }
+
+
+    return JSON.parse(
+      saved
+    );
 
   }
 
-  catch {
+  catch (error) {
+
+    console.error(
+      "Storage error:",
+      error
+    );
+
 
     return fallback;
 
@@ -419,7 +650,7 @@ function saveWishlist() {
 
 
 // =====================================================
-// FORMAT PRICE
+// PRICE
 // =====================================================
 
 function formatPrice(
@@ -429,10 +660,17 @@ function formatPrice(
   return new Intl.NumberFormat(
     "en-GB",
     {
-      style: "currency",
-      currency: "GBP"
+
+      style:
+        "currency",
+
+      currency:
+        "GBP"
+
     }
-  ).format(price);
+  ).format(
+    price
+  );
 
 }
 
@@ -455,7 +693,61 @@ function getProduct(
 
 
 // =====================================================
-// PRODUCT FILTERING
+// SAFE IMAGE
+// =====================================================
+
+function createProductImage(
+  product,
+  className = ""
+) {
+
+  const image =
+    document.createElement(
+      "img"
+    );
+
+
+  image.src =
+    product.image;
+
+
+  image.alt =
+    product.name;
+
+
+  image.loading =
+    "lazy";
+
+
+  if (className) {
+
+    image.className =
+      className;
+
+  }
+
+
+  image.addEventListener(
+    "error",
+    () => {
+
+      image.src =
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80";
+
+    },
+    {
+      once: true
+    }
+  );
+
+
+  return image;
+
+}
+
+
+// =====================================================
+// FILTER PRODUCTS
 // =====================================================
 
 function getFilteredProducts() {
@@ -463,6 +755,8 @@ function getFilteredProducts() {
   let filtered =
     [...products];
 
+
+  // Category
 
   if (
     selectedCategory !==
@@ -479,10 +773,15 @@ function getFilteredProducts() {
   }
 
 
-  if (searchTerm) {
+  // Search
+
+  if (
+    searchTerm
+  ) {
 
     const value =
-      searchTerm.toLowerCase();
+      searchTerm
+        .toLowerCase();
 
 
     filtered =
@@ -510,6 +809,8 @@ function getFilteredProducts() {
   }
 
 
+  // Sort
+
   if (
     sortMode ===
     "price-low"
@@ -517,7 +818,8 @@ function getFilteredProducts() {
 
     filtered.sort(
       (a, b) =>
-        a.price - b.price
+        a.price -
+        b.price
     );
 
   }
@@ -530,7 +832,8 @@ function getFilteredProducts() {
 
     filtered.sort(
       (a, b) =>
-        b.price - a.price
+        b.price -
+        a.price
     );
 
   }
@@ -543,7 +846,8 @@ function getFilteredProducts() {
 
     filtered.sort(
       (a, b) =>
-        b.rating - a.rating
+        b.rating -
+        a.rating
     );
 
   }
@@ -584,6 +888,7 @@ function renderProducts() {
       "show"
     );
 
+
     return;
 
   }
@@ -595,10 +900,7 @@ function renderProducts() {
 
 
   filteredProducts.forEach(
-    (
-      product,
-      index
-    ) => {
+    product => {
 
       const card =
         document.createElement(
@@ -610,9 +912,57 @@ function renderProducts() {
         "product-card";
 
 
-      card.style.animationDelay =
-        `${index * 0.04}s`;
+      // Product Image Area
 
+      const imageArea =
+        document.createElement(
+          "div"
+        );
+
+
+      imageArea.className =
+        "product-image";
+
+
+      const image =
+        createProductImage(
+          product
+        );
+
+
+      imageArea.appendChild(
+        image
+      );
+
+
+      // Badge
+
+      if (
+        product.badge
+      ) {
+
+        const badge =
+          document.createElement(
+            "span"
+          );
+
+
+        badge.className =
+          "product-badge";
+
+
+        badge.textContent =
+          product.badge;
+
+
+        imageArea.appendChild(
+          badge
+        );
+
+      }
+
+
+      // Wishlist Button
 
       const favourite =
         wishlist.includes(
@@ -620,91 +970,231 @@ function renderProducts() {
         );
 
 
-      card.innerHTML = `
-
-        <div class="product-image">
-
-          ${
-            product.badge
-              ? `
-                <span class="product-badge">
-                  ${product.badge}
-                </span>
-              `
-              : ""
-          }
-
-          <button
-            type="button"
-            class="wishlist-toggle ${
-              favourite
-                ? "active"
-                : ""
-            }"
-            data-wishlist-id="${product.id}"
-            aria-label="Save ${product.name}"
-          >
-            ${
-              favourite
-                ? "♥"
-                : "♡"
-            }
-          </button>
-
-          <span class="product-image-icon">
-            ${product.icon}
-          </span>
-
-        </div>
+      const wishlistToggle =
+        document.createElement(
+          "button"
+        );
 
 
-        <div class="product-info">
-
-          <span class="product-category">
-            ${product.category}
-          </span>
-
-          <h3>
-            ${product.name}
-          </h3>
-
-          <div class="product-rating">
-            ★ ${product.rating}
-          </div>
+      wishlistToggle.type =
+        "button";
 
 
-          <div class="product-bottom">
+      wishlistToggle.className =
+        `wishlist-toggle ${
+          favourite
+            ? "active"
+            : ""
+        }`;
 
-            <span class="product-price">
-              ${formatPrice(product.price)}
-            </span>
+
+      wishlistToggle.textContent =
+        favourite
+          ? "♥"
+          : "♡";
 
 
-            <div class="product-actions">
+      wishlistToggle.setAttribute(
+        "aria-label",
+        favourite
+          ? `Remove ${product.name} from wishlist`
+          : `Add ${product.name} to wishlist`
+      );
 
-              <button
-                type="button"
-                class="product-view-button"
-                data-view-id="${product.id}"
-              >
-                View
-              </button>
 
-              <button
-                type="button"
-                class="add-cart-button"
-                data-add-id="${product.id}"
-              >
-                Add
-              </button>
+      wishlistToggle.addEventListener(
+        "click",
+        () => {
 
-            </div>
+          toggleWishlist(
+            product.id
+          );
 
-          </div>
+        }
+      );
 
-        </div>
 
-      `;
+      imageArea.appendChild(
+        wishlistToggle
+      );
+
+
+      // Information
+
+      const info =
+        document.createElement(
+          "div"
+        );
+
+
+      info.className =
+        "product-info";
+
+
+      const category =
+        document.createElement(
+          "span"
+        );
+
+
+      category.className =
+        "product-category";
+
+
+      category.textContent =
+        product.category;
+
+
+      const title =
+        document.createElement(
+          "h3"
+        );
+
+
+      title.textContent =
+        product.name;
+
+
+      const rating =
+        document.createElement(
+          "div"
+        );
+
+
+      rating.className =
+        "product-rating";
+
+
+      rating.textContent =
+        `★ ${product.rating}`;
+
+
+      // Bottom
+
+      const bottom =
+        document.createElement(
+          "div"
+        );
+
+
+      bottom.className =
+        "product-bottom";
+
+
+      const price =
+        document.createElement(
+          "span"
+        );
+
+
+      price.className =
+        "product-price";
+
+
+      price.textContent =
+        formatPrice(
+          product.price
+        );
+
+
+      const actions =
+        document.createElement(
+          "div"
+        );
+
+
+      actions.className =
+        "product-actions";
+
+
+      // View Button
+
+      const viewButton =
+        document.createElement(
+          "button"
+        );
+
+
+      viewButton.type =
+        "button";
+
+
+      viewButton.className =
+        "product-view-button";
+
+
+      viewButton.textContent =
+        "View";
+
+
+      viewButton.addEventListener(
+        "click",
+        () => {
+
+          openProductModal(
+            product.id
+          );
+
+        }
+      );
+
+
+      // Add Button
+
+      const addButton =
+        document.createElement(
+          "button"
+        );
+
+
+      addButton.type =
+        "button";
+
+
+      addButton.className =
+        "add-cart-button";
+
+
+      addButton.textContent =
+        "Add";
+
+
+      addButton.addEventListener(
+        "click",
+        () => {
+
+          addToCart(
+            product.id
+          );
+
+        }
+      );
+
+
+      actions.append(
+        viewButton,
+        addButton
+      );
+
+
+      bottom.append(
+        price,
+        actions
+      );
+
+
+      info.append(
+        category,
+        title,
+        rating,
+        bottom
+      );
+
+
+      card.append(
+        imageArea,
+        info
+      );
 
 
       productGrid.appendChild(
@@ -713,84 +1203,6 @@ function renderProducts() {
 
     }
   );
-
-
-  attachProductEvents();
-
-}
-
-
-// =====================================================
-// PRODUCT CARD EVENTS
-// =====================================================
-
-function attachProductEvents() {
-
-  document
-    .querySelectorAll(
-      "[data-add-id]"
-    )
-    .forEach(
-      button => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            addToCart(
-              button.dataset.addId
-            );
-
-          }
-        );
-
-      }
-    );
-
-
-  document
-    .querySelectorAll(
-      "[data-view-id]"
-    )
-    .forEach(
-      button => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            openProductModal(
-              button.dataset.viewId
-            );
-
-          }
-        );
-
-      }
-    );
-
-
-  document
-    .querySelectorAll(
-      "[data-wishlist-id]"
-    )
-    .forEach(
-      button => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            toggleWishlist(
-              button.dataset
-                .wishlistId
-            );
-
-          }
-        );
-
-      }
-    );
 
 }
 
@@ -808,10 +1220,13 @@ categoryButtons.forEach(
 
         categoryButtons
           .forEach(
-            item =>
+            item => {
+
               item.classList.remove(
                 "active"
-              )
+              );
+
+            }
           );
 
 
@@ -831,9 +1246,12 @@ categoryButtons.forEach(
           .getElementById(
             "products"
           )
-          .scrollIntoView({
-            behavior: "smooth"
-          });
+          .scrollIntoView(
+            {
+              behavior:
+                "smooth"
+            }
+          );
 
       }
     );
@@ -863,7 +1281,7 @@ productSearch.addEventListener(
 
 
 // =====================================================
-// SORT PRODUCTS
+// SORTING
 // =====================================================
 
 sortProducts.addEventListener(
@@ -881,7 +1299,7 @@ sortProducts.addEventListener(
 
 
 // =====================================================
-// CART
+// ADD TO CART
 // =====================================================
 
 function addToCart(
@@ -889,7 +1307,9 @@ function addToCart(
 ) {
 
   const id =
-    Number(productId);
+    Number(
+      productId
+    );
 
 
   const existing =
@@ -899,7 +1319,9 @@ function addToCart(
     );
 
 
-  if (existing) {
+  if (
+    existing
+  ) {
 
     existing.quantity +=
       1;
@@ -908,30 +1330,34 @@ function addToCart(
 
   else {
 
-    cart.push({
+    cart.push(
+      {
+        id:
+          id,
 
-      id: id,
-
-      quantity: 1
-
-    });
+        quantity:
+          1
+      }
+    );
 
   }
 
 
   saveCart();
 
+
   renderCart();
 
+
   showToast(
-    "Product added to cart"
+    "Added to your cart"
   );
 
 }
 
 
 // =====================================================
-// UPDATE CART QUANTITY
+// CART QUANTITY
 // =====================================================
 
 function changeQuantity(
@@ -939,16 +1365,23 @@ function changeQuantity(
   change
 ) {
 
+  const id =
+    Number(
+      productId
+    );
+
+
   const item =
     cart.find(
-      cartItem =>
-        cartItem.id ===
-        Number(productId)
+      item =>
+        item.id === id
     );
 
 
   if (!item) {
+
     return;
+
   }
 
 
@@ -962,9 +1395,8 @@ function changeQuantity(
 
     cart =
       cart.filter(
-        cartItem =>
-          cartItem.id !==
-          Number(productId)
+        item =>
+          item.id !== id
       );
 
   }
@@ -972,34 +1404,41 @@ function changeQuantity(
 
   saveCart();
 
+
   renderCart();
 
 }
 
 
 // =====================================================
-// REMOVE CART ITEM
+// REMOVE FROM CART
 // =====================================================
 
 function removeFromCart(
   productId
 ) {
 
+  const id =
+    Number(
+      productId
+    );
+
+
   cart =
     cart.filter(
       item =>
-        item.id !==
-        Number(productId)
+        item.id !== id
     );
 
 
   saveCart();
 
+
   renderCart();
 
 
   showToast(
-    "Product removed"
+    "Removed from cart"
   );
 
 }
@@ -1043,6 +1482,7 @@ function renderCart() {
       "show"
     );
 
+
     cartItems.style.display =
       "none";
 
@@ -1053,6 +1493,7 @@ function renderCart() {
     emptyCart.classList.remove(
       "show"
     );
+
 
     cartItems.style.display =
       "grid";
@@ -1070,7 +1511,9 @@ function renderCart() {
 
 
       if (!product) {
+
         return;
+
       }
 
 
@@ -1089,61 +1532,202 @@ function renderCart() {
         "cart-item";
 
 
-      cartItem.innerHTML = `
+      // Image
 
-        <div class="cart-item-image">
-          ${product.icon}
-        </div>
-
-
-        <div class="cart-item-info">
-
-          <strong>
-            ${product.name}
-          </strong>
-
-          <span>
-            ${formatPrice(product.price)}
-          </span>
+      const imageWrapper =
+        document.createElement(
+          "div"
+        );
 
 
-          <div class="quantity-controls">
-
-            <button
-              type="button"
-              data-minus-id="${product.id}"
-              aria-label="Decrease quantity"
-            >
-              −
-            </button>
-
-            <strong>
-              ${item.quantity}
-            </strong>
-
-            <button
-              type="button"
-              data-plus-id="${product.id}"
-              aria-label="Increase quantity"
-            >
-              +
-            </button>
-
-          </div>
-
-        </div>
+      imageWrapper.className =
+        "cart-item-image";
 
 
-        <button
-          type="button"
-          class="remove-item-button"
-          data-remove-id="${product.id}"
-          aria-label="Remove ${product.name}"
-        >
-          ×
-        </button>
+      imageWrapper.appendChild(
+        createProductImage(
+          product
+        )
+      );
 
-      `;
+
+      // Info
+
+      const info =
+        document.createElement(
+          "div"
+        );
+
+
+      info.className =
+        "cart-item-info";
+
+
+      const name =
+        document.createElement(
+          "strong"
+        );
+
+
+      name.textContent =
+        product.name;
+
+
+      const price =
+        document.createElement(
+          "span"
+        );
+
+
+      price.textContent =
+        formatPrice(
+          product.price
+        );
+
+
+      const quantity =
+        document.createElement(
+          "div"
+        );
+
+
+      quantity.className =
+        "quantity-controls";
+
+
+      const minus =
+        document.createElement(
+          "button"
+        );
+
+
+      minus.type =
+        "button";
+
+
+      minus.textContent =
+        "−";
+
+
+      minus.setAttribute(
+        "aria-label",
+        `Reduce quantity of ${product.name}`
+      );
+
+
+      minus.addEventListener(
+        "click",
+        () => {
+
+          changeQuantity(
+            product.id,
+            -1
+          );
+
+        }
+      );
+
+
+      const number =
+        document.createElement(
+          "strong"
+        );
+
+
+      number.textContent =
+        item.quantity;
+
+
+      const plus =
+        document.createElement(
+          "button"
+        );
+
+
+      plus.type =
+        "button";
+
+
+      plus.textContent =
+        "+";
+
+
+      plus.setAttribute(
+        "aria-label",
+        `Increase quantity of ${product.name}`
+      );
+
+
+      plus.addEventListener(
+        "click",
+        () => {
+
+          changeQuantity(
+            product.id,
+            1
+          );
+
+        }
+      );
+
+
+      quantity.append(
+        minus,
+        number,
+        plus
+      );
+
+
+      info.append(
+        name,
+        price,
+        quantity
+      );
+
+
+      // Remove
+
+      const removeButton =
+        document.createElement(
+          "button"
+        );
+
+
+      removeButton.type =
+        "button";
+
+
+      removeButton.className =
+        "remove-item-button";
+
+
+      removeButton.textContent =
+        "×";
+
+
+      removeButton.setAttribute(
+        "aria-label",
+        `Remove ${product.name}`
+      );
+
+
+      removeButton.addEventListener(
+        "click",
+        () => {
+
+          removeFromCart(
+            product.id
+          );
+
+        }
+      );
+
+
+      cartItem.append(
+        imageWrapper,
+        info,
+        removeButton
+      );
 
 
       cartItems.appendChild(
@@ -1159,111 +1743,6 @@ function renderCart() {
       subtotal
     );
 
-
-  attachCartEvents();
-
-}
-
-
-// =====================================================
-// CART EVENTS
-// =====================================================
-
-function attachCartEvents() {
-
-  document
-    .querySelectorAll(
-      "[data-plus-id]"
-    )
-    .forEach(
-      button => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            changeQuantity(
-              button.dataset.plusId,
-              1
-            );
-
-          }
-        );
-
-      }
-    );
-
-
-  document
-    .querySelectorAll(
-      "[data-minus-id]"
-    )
-    .forEach(
-      button => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            changeQuantity(
-              button.dataset.minusId,
-              -1
-            );
-
-          }
-        );
-
-      }
-    );
-
-
-  document
-    .querySelectorAll(
-      "[data-remove-id]"
-    )
-    .forEach(
-      button => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            removeFromCart(
-              button.dataset
-                .removeId
-            );
-
-          }
-        );
-
-      }
-    );
-
-}
-
-
-// =====================================================
-// OPEN CART
-// =====================================================
-
-function openCart() {
-
-  closeAllDrawers();
-
-
-  cartDrawer.classList.add(
-    "open"
-  );
-
-
-  drawerOverlay.classList.add(
-    "open"
-  );
-
-
-  document.body.style.overflow =
-    "hidden";
-
 }
 
 
@@ -1276,7 +1755,9 @@ function toggleWishlist(
 ) {
 
   const id =
-    Number(productId);
+    Number(
+      productId
+    );
 
 
   if (
@@ -1285,8 +1766,8 @@ function toggleWishlist(
 
     wishlist =
       wishlist.filter(
-        itemId =>
-          itemId !== id
+        savedId =>
+          savedId !== id
       );
 
 
@@ -1298,7 +1779,9 @@ function toggleWishlist(
 
   else {
 
-    wishlist.push(id);
+    wishlist.push(
+      id
+    );
 
 
     showToast(
@@ -1310,7 +1793,9 @@ function toggleWishlist(
 
   saveWishlist();
 
+
   renderWishlist();
+
 
   renderProducts();
 
@@ -1339,8 +1824,10 @@ function renderWishlist() {
       "show"
     );
 
+
     wishlistItems.style.display =
       "none";
+
 
     return;
 
@@ -1366,7 +1853,9 @@ function renderWishlist() {
 
 
       if (!product) {
+
         return;
+
       }
 
 
@@ -1380,44 +1869,137 @@ function renderWishlist() {
         "wishlist-item";
 
 
-      item.innerHTML = `
-
-        <div class="wishlist-item-image">
-          ${product.icon}
-        </div>
-
-
-        <div class="wishlist-item-info">
-
-          <strong>
-            ${product.name}
-          </strong>
-
-          <span>
-            ${formatPrice(product.price)}
-          </span>
-
-          <button
-            type="button"
-            class="add-cart-button wishlist-cart-button"
-            data-wishlist-cart="${product.id}"
-          >
-            Add to cart
-          </button>
-
-        </div>
+      const imageWrapper =
+        document.createElement(
+          "div"
+        );
 
 
-        <button
-          type="button"
-          class="remove-item-button"
-          data-wishlist-remove="${product.id}"
-          aria-label="Remove ${product.name}"
-        >
-          ×
-        </button>
+      imageWrapper.className =
+        "wishlist-item-image";
 
-      `;
+
+      imageWrapper.appendChild(
+        createProductImage(
+          product
+        )
+      );
+
+
+      const info =
+        document.createElement(
+          "div"
+        );
+
+
+      info.className =
+        "wishlist-item-info";
+
+
+      const title =
+        document.createElement(
+          "strong"
+        );
+
+
+      title.textContent =
+        product.name;
+
+
+      const price =
+        document.createElement(
+          "span"
+        );
+
+
+      price.textContent =
+        formatPrice(
+          product.price
+        );
+
+
+      const addButton =
+        document.createElement(
+          "button"
+        );
+
+
+      addButton.type =
+        "button";
+
+
+      addButton.className =
+        "add-cart-button";
+
+
+      addButton.textContent =
+        "Add to cart";
+
+
+      addButton.style.marginTop =
+        "8px";
+
+
+      addButton.addEventListener(
+        "click",
+        () => {
+
+          addToCart(
+            product.id
+          );
+
+        }
+      );
+
+
+      info.append(
+        title,
+        price,
+        addButton
+      );
+
+
+      const removeButton =
+        document.createElement(
+          "button"
+        );
+
+
+      removeButton.type =
+        "button";
+
+
+      removeButton.className =
+        "remove-item-button";
+
+
+      removeButton.textContent =
+        "×";
+
+
+      removeButton.setAttribute(
+        "aria-label",
+        `Remove ${product.name} from wishlist`
+      );
+
+
+      removeButton.addEventListener(
+        "click",
+        () => {
+
+          toggleWishlist(
+            product.id
+          );
+
+        }
+      );
+
+
+      item.append(
+        imageWrapper,
+        info,
+        removeButton
+      );
 
 
       wishlistItems.appendChild(
@@ -1427,62 +2009,30 @@ function renderWishlist() {
     }
   );
 
-
-  attachWishlistEvents();
-
 }
 
 
 // =====================================================
-// WISHLIST EVENTS
+// OPEN CART
 // =====================================================
 
-function attachWishlistEvents() {
+function openCart() {
 
-  document
-    .querySelectorAll(
-      "[data-wishlist-remove]"
-    )
-    .forEach(
-      button => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            toggleWishlist(
-              button.dataset
-                .wishlistRemove
-            );
-
-          }
-        );
-
-      }
-    );
+  closeDrawers();
 
 
-  document
-    .querySelectorAll(
-      "[data-wishlist-cart]"
-    )
-    .forEach(
-      button => {
+  cartDrawer.classList.add(
+    "open"
+  );
 
-        button.addEventListener(
-          "click",
-          () => {
 
-            addToCart(
-              button.dataset
-                .wishlistCart
-            );
+  drawerOverlay.classList.add(
+    "open"
+  );
 
-          }
-        );
 
-      }
-    );
+  document.body.style.overflow =
+    "hidden";
 
 }
 
@@ -1493,7 +2043,7 @@ function attachWishlistEvents() {
 
 function openWishlist() {
 
-  closeAllDrawers();
+  closeDrawers();
 
 
   wishlistDrawer.classList.add(
@@ -1516,7 +2066,7 @@ function openWishlist() {
 // CLOSE DRAWERS
 // =====================================================
 
-function closeAllDrawers() {
+function closeDrawers() {
 
   cartDrawer.classList.remove(
     "open"
@@ -1540,7 +2090,7 @@ function closeAllDrawers() {
 
 
 // =====================================================
-// DRAWER BUTTONS
+// DRAWER EVENTS
 // =====================================================
 
 cartButton.addEventListener(
@@ -1557,49 +2107,67 @@ wishlistButton.addEventListener(
 
 closeCartButton.addEventListener(
   "click",
-  closeAllDrawers
+  closeDrawers
 );
 
 
 closeWishlistButton.addEventListener(
   "click",
-  closeAllDrawers
+  closeDrawers
 );
 
 
 drawerOverlay.addEventListener(
   "click",
-  closeAllDrawers
+  closeDrawers
 );
 
 
 // =====================================================
-// HERO ADD BUTTON
+// HERO PRODUCT
 // =====================================================
 
-document
-  .querySelectorAll(
+const heroButton =
+  document.querySelector(
     ".hero-add-button"
-  )
-  .forEach(
-    button => {
+  );
 
-      button.addEventListener(
-        "click",
-        () => {
 
-          addToCart(
-            button.dataset
-              .productId
-          );
+if (
+  heroButton
+) {
 
-          openCart();
+  heroButton.addEventListener(
+    "click",
+    () => {
 
-        }
+      addToCart(
+        heroButton.dataset.productId
       );
+
+
+      openCart();
 
     }
   );
+
+}
+
+
+// Keep hero photograph matched with product 1
+
+if (
+  heroImage
+) {
+
+  heroImage.src =
+    products[0].image;
+
+
+  heroImage.alt =
+    products[0].name;
+
+}
 
 
 // =====================================================
@@ -1617,73 +2185,213 @@ function openProductModal(
 
 
   if (!product) {
+
     return;
+
   }
 
 
-  const favourite =
-    wishlist.includes(
-      product.id
+  productModalContent.innerHTML =
+    "";
+
+
+  // Image
+
+  const imageWrapper =
+    document.createElement(
+      "div"
     );
 
 
-  productModalContent.innerHTML = `
-
-    <div class="modal-product-image">
-      ${product.icon}
-    </div>
+  imageWrapper.className =
+    "modal-product-image";
 
 
-    <div class="modal-product-info">
-
-      <span class="section-label">
-        ${product.category}
-      </span>
-
-      <h2>
-        ${product.name}
-      </h2>
-
-      <div class="product-rating">
-        ★ ${product.rating}
-      </div>
-
-      <p>
-        ${product.description}
-      </p>
-
-      <strong class="modal-price">
-        ${formatPrice(product.price)}
-      </strong>
+  imageWrapper.appendChild(
+    createProductImage(
+      product
+    )
+  );
 
 
-      <div class="hero-actions">
+  // Information
 
-        <button
-          type="button"
-          class="add-cart-button"
-          id="modal-add-cart"
-        >
-          Add to cart
-        </button>
+  const info =
+    document.createElement(
+      "div"
+    );
 
-        <button
-          type="button"
-          class="secondary-button"
-          id="modal-wishlist"
-        >
-          ${
-            favourite
-              ? "♥ Saved"
-              : "♡ Add to wishlist"
-          }
-        </button>
 
-      </div>
+  info.className =
+    "modal-product-info";
 
-    </div>
 
-  `;
+  const category =
+    document.createElement(
+      "span"
+    );
+
+
+  category.className =
+    "section-label";
+
+
+  category.textContent =
+    product.category;
+
+
+  const title =
+    document.createElement(
+      "h2"
+    );
+
+
+  title.textContent =
+    product.name;
+
+
+  const rating =
+    document.createElement(
+      "div"
+    );
+
+
+  rating.className =
+    "product-rating";
+
+
+  rating.textContent =
+    `★ ${product.rating} / 5`;
+
+
+  const description =
+    document.createElement(
+      "p"
+    );
+
+
+  description.textContent =
+    product.description;
+
+
+  const price =
+    document.createElement(
+      "strong"
+    );
+
+
+  price.className =
+    "modal-price";
+
+
+  price.textContent =
+    formatPrice(
+      product.price
+    );
+
+
+  const actions =
+    document.createElement(
+      "div"
+    );
+
+
+  actions.className =
+    "hero-actions";
+
+
+  const addButton =
+    document.createElement(
+      "button"
+    );
+
+
+  addButton.type =
+    "button";
+
+
+  addButton.className =
+    "add-cart-button";
+
+
+  addButton.textContent =
+    "Add to cart";
+
+
+  addButton.addEventListener(
+    "click",
+    () => {
+
+      addToCart(
+        product.id
+      );
+
+    }
+  );
+
+
+  const favouriteButton =
+    document.createElement(
+      "button"
+    );
+
+
+  favouriteButton.type =
+    "button";
+
+
+  favouriteButton.className =
+    "secondary-button";
+
+
+  favouriteButton.textContent =
+    wishlist.includes(
+      product.id
+    )
+      ? "♥ Saved"
+      : "♡ Add to wishlist";
+
+
+  favouriteButton.addEventListener(
+    "click",
+    () => {
+
+      toggleWishlist(
+        product.id
+      );
+
+
+      favouriteButton.textContent =
+        wishlist.includes(
+          product.id
+        )
+          ? "♥ Saved"
+          : "♡ Add to wishlist";
+
+    }
+  );
+
+
+  actions.append(
+    addButton,
+    favouriteButton
+  );
+
+
+  info.append(
+    category,
+    title,
+    rating,
+    description,
+    price,
+    actions
+  );
+
+
+  productModalContent.append(
+    imageWrapper,
+    info
+  );
 
 
   productModal.classList.add(
@@ -1693,43 +2401,6 @@ function openProductModal(
 
   document.body.style.overflow =
     "hidden";
-
-
-  document
-    .getElementById(
-      "modal-add-cart"
-    )
-    .addEventListener(
-      "click",
-      () => {
-
-        addToCart(
-          product.id
-        );
-
-      }
-    );
-
-
-  document
-    .getElementById(
-      "modal-wishlist"
-    )
-    .addEventListener(
-      "click",
-      () => {
-
-        toggleWishlist(
-          product.id
-        );
-
-
-        openProductModal(
-          product.id
-        );
-
-      }
-    );
 
 }
 
@@ -1857,11 +2528,11 @@ globalSearchInput.addEventListener(
         .trim();
 
 
-    productSearch.value =
+    searchTerm =
       value;
 
 
-    searchTerm =
+    productSearch.value =
       value;
 
 
@@ -1905,9 +2576,12 @@ globalSearchInput.addEventListener(
         .getElementById(
           "products"
         )
-        .scrollIntoView({
-          behavior: "smooth"
-        });
+        .scrollIntoView(
+          {
+            behavior:
+              "smooth"
+          }
+        );
 
     }
 
@@ -1939,7 +2613,9 @@ mobileMenuButton.addEventListener(
 
 
 mobileMenu
-  .querySelectorAll("a")
+  .querySelectorAll(
+    "a"
+  )
   .forEach(
     link => {
 
@@ -1963,7 +2639,7 @@ mobileMenu
 
 
 // =====================================================
-// CHECKOUT
+// DEMO CHECKOUT
 // =====================================================
 
 checkoutButton.addEventListener(
@@ -1978,16 +2654,17 @@ checkoutButton.addEventListener(
         "Your cart is empty"
       );
 
+
       return;
 
     }
 
 
-    closeAllDrawers();
+    closeDrawers();
 
 
     showToast(
-      "Demo checkout ready"
+      "Checkout ready"
     );
 
 
@@ -1995,11 +2672,11 @@ checkoutButton.addEventListener(
       () => {
 
         alert(
-          "ShopSphere Checkout\n\nThis is a portfolio demonstration. No real payment will be taken."
+          "ShopSphere Checkout\n\nThis is a portfolio demonstration store. No real payment will be taken."
         );
 
       },
-      350
+      300
     );
 
   }
@@ -2007,7 +2684,7 @@ checkoutButton.addEventListener(
 
 
 // =====================================================
-// TOAST MESSAGE
+// TOAST
 // =====================================================
 
 function showToast(
@@ -2061,9 +2738,11 @@ document.addEventListener(
     }
 
 
-    closeAllDrawers();
+    closeDrawers();
+
 
     closeModal();
+
 
     closeSearchOverlay();
 
@@ -2081,14 +2760,16 @@ document.addEventListener(
 
 
 // =====================================================
-// INITIALISE SHOPSPHERE
+// INITIALISE
 // =====================================================
 
 function initialiseApp() {
 
   renderProducts();
 
+
   renderCart();
+
 
   renderWishlist();
 
