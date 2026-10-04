@@ -12,10 +12,10 @@
 
   <meta
     name="description"
-    content="ShopSphere is a modern responsive e-commerce store built with HTML, CSS and JavaScript."
+    content="ShopSphere is a modern online store for technology, lifestyle and everyday products."
   >
 
-  <title>ShopSphere | Modern E-commerce Store</title>
+  <title>ShopSphere | Modern Online Store</title>
 
   <link
     rel="preconnect"
@@ -44,19 +44,15 @@
 <body>
 
 
-  <!-- =========================================
-       HEADER
-  ========================================== -->
+  <!-- HEADER -->
 
   <header class="site-header">
 
     <div class="container header-content">
 
 
-      <!-- Logo -->
-
       <a
-        href="index.html"
+        href="#home"
         class="logo"
       >
 
@@ -70,9 +66,6 @@
 
       </a>
 
-
-
-      <!-- Navigation -->
 
       <nav
         class="main-nav"
@@ -98,18 +91,31 @@
       </nav>
 
 
-
-      <!-- Header Actions -->
-
       <div class="header-actions">
+
 
         <button
           type="button"
           id="search-toggle"
           class="header-icon-button"
-          aria-label="Open search"
+          aria-label="Search products"
         >
-          🔍
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle
+              cx="11"
+              cy="11"
+              r="7"
+            ></circle>
+
+            <path
+              d="M20 20l-3.5-3.5"
+            ></path>
+          </svg>
+
         </button>
 
 
@@ -117,9 +123,17 @@
           type="button"
           id="wishlist-button"
           class="header-icon-button"
-          aria-label="View wishlist"
+          aria-label="Wishlist"
         >
-          ♡
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"
+            ></path>
+          </svg>
 
           <span
             id="wishlist-count"
@@ -135,9 +149,29 @@
           type="button"
           id="cart-button"
           class="header-icon-button"
-          aria-label="Open shopping cart"
+          aria-label="Shopping cart"
         >
-          🛒
+
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle
+              cx="9"
+              cy="20"
+              r="1"
+            ></circle>
+
+            <circle
+              cx="19"
+              cy="20"
+              r="1"
+            ></circle>
+
+            <path
+              d="M3 4h2l2.4 10.2a2 2 0 0 0 2 1.5h7.7a2 2 0 0 0 2-1.5L21 7H6"
+            ></path>
+          </svg>
 
           <span
             id="cart-count"
@@ -153,18 +187,16 @@
           type="button"
           id="mobile-menu-button"
           class="mobile-menu-button"
-          aria-label="Open navigation menu"
+          aria-label="Open menu"
         >
           ☰
         </button>
 
-      </div>
 
+      </div>
 
     </div>
 
-
-    <!-- Mobile Navigation -->
 
     <div
       id="mobile-menu"
@@ -189,14 +221,11 @@
 
     </div>
 
-
   </header>
 
 
 
-  <!-- =========================================
-       SEARCH OVERLAY
-  ========================================== -->
+  <!-- SEARCH OVERLAY -->
 
   <div
     id="search-overlay"
@@ -209,27 +238,38 @@
         type="button"
         id="close-search"
         class="close-button"
-        aria-label="Close search"
       >
         ×
       </button>
 
 
       <span class="section-label">
-        SEARCH PRODUCTS
+        PRODUCT SEARCH
       </span>
 
 
       <h2>
-        What are you looking for?
+        Find what you need.
       </h2>
 
 
       <div class="large-search">
 
-        <span>
-          🔍
-        </span>
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <circle
+            cx="11"
+            cy="11"
+            r="7"
+          ></circle>
+
+          <path
+            d="M20 20l-3.5-3.5"
+          ></path>
+        </svg>
+
 
         <input
           type="search"
@@ -249,9 +289,7 @@
   <main>
 
 
-    <!-- =========================================
-         HERO
-    ========================================== -->
+    <!-- HERO -->
 
     <section
       id="home"
@@ -261,27 +299,26 @@
       <div class="container hero-grid">
 
 
-        <!-- Hero Copy -->
-
         <div class="hero-content">
 
+
           <span class="eyebrow">
-            NEW COLLECTION 2026
+            NEW SEASON COLLECTION
           </span>
 
 
           <h1>
-            Discover products
+            Better products.
             <span>
-              made for you.
+              Better everyday.
             </span>
           </h1>
 
 
           <p>
-            Explore a modern collection of everyday
-            essentials, technology and lifestyle products
-            with a simple and enjoyable shopping experience.
+            Discover carefully selected technology,
+            accessories and lifestyle essentials designed
+            for modern everyday living.
           </p>
 
 
@@ -291,7 +328,7 @@
               href="#products"
               class="primary-button"
             >
-              Shop Collection
+              Shop now
             </a>
 
 
@@ -299,7 +336,7 @@
               href="#categories"
               class="secondary-button"
             >
-              Browse Categories
+              Browse categories
             </a>
 
           </div>
@@ -308,41 +345,44 @@
           <div class="hero-stats">
 
             <div>
-              <strong>50+</strong>
-              <span>Products</span>
+              <strong>12+</strong>
+              <span>Selected products</span>
             </div>
 
             <div>
-              <strong>4.8</strong>
-              <span>Average Rating</span>
+              <strong>4.8/5</strong>
+              <span>Customer rating</span>
             </div>
 
             <div>
-              <strong>24/7</strong>
-              <span>Online Shopping</span>
+              <strong>Free</strong>
+              <span>Delivery over £50</span>
             </div>
 
           </div>
+
 
         </div>
 
 
 
-        <!-- Hero Visual -->
+        <!-- REAL PRODUCT HERO IMAGE -->
 
         <div class="hero-visual">
 
-          <div class="hero-product-card">
 
-            <span class="hero-badge">
-              FEATURED
-            </span>
+          <div class="hero-product-card">
 
 
             <div class="hero-product-image">
 
-              <span>
-                🎧
+              <img
+                src="https://images.unsplash.com/photo-1505751104546-4b63c93054b1?auto=format&fit=crop&w=1200&q=85"
+                alt="Wireless headphones"
+              >
+
+              <span class="hero-badge">
+                BEST SELLER
               </span>
 
             </div>
@@ -351,24 +391,35 @@
             <div class="hero-product-info">
 
               <span>
-                Audio
+                Wireless Audio
               </span>
+
 
               <h2>
                 Nova Wireless Headphones
               </h2>
 
+
               <p>
-                Premium sound with a clean,
-                comfortable design.
+                Comfortable wireless headphones
+                with clean sound and a modern design.
               </p>
 
 
               <div class="hero-product-bottom">
 
-                <strong>
-                  £79.99
-                </strong>
+                <div>
+
+                  <small>
+                    From
+                  </small>
+
+                  <strong>
+                    £79.99
+                  </strong>
+
+                </div>
+
 
                 <button
                   type="button"
@@ -382,11 +433,13 @@
 
             </div>
 
+
           </div>
 
 
           <span class="floating-shape shape-one"></span>
           <span class="floating-shape shape-two"></span>
+
 
         </div>
 
@@ -397,9 +450,7 @@
 
 
 
-    <!-- =========================================
-         BENEFITS
-    ========================================== -->
+    <!-- BENEFITS -->
 
     <section class="benefits-section">
 
@@ -408,18 +459,20 @@
 
         <article class="benefit-card">
 
-          <span>
-            🚚
-          </span>
+          <div class="benefit-number">
+            01
+          </div>
 
           <div>
+
             <strong>
-              Free Delivery
+              Free delivery
             </strong>
 
             <p>
               On orders over £50
             </p>
+
           </div>
 
         </article>
@@ -427,18 +480,20 @@
 
         <article class="benefit-card">
 
-          <span>
-            ↩️
-          </span>
+          <div class="benefit-number">
+            02
+          </div>
 
           <div>
+
             <strong>
-              Easy Returns
+              Easy returns
             </strong>
 
             <p>
-              30-day return policy
+              30-day returns
             </p>
+
           </div>
 
         </article>
@@ -446,18 +501,20 @@
 
         <article class="benefit-card">
 
-          <span>
-            🔒
-          </span>
+          <div class="benefit-number">
+            03
+          </div>
 
           <div>
+
             <strong>
-              Secure Checkout
+              Secure checkout
             </strong>
 
             <p>
-              Safe demonstration checkout
+              Safe shopping experience
             </p>
+
           </div>
 
         </article>
@@ -465,18 +522,20 @@
 
         <article class="benefit-card">
 
-          <span>
-            💬
-          </span>
+          <div class="benefit-number">
+            04
+          </div>
 
           <div>
+
             <strong>
-              Customer Support
+              Customer support
             </strong>
 
             <p>
               Help when you need it
             </p>
+
           </div>
 
         </article>
@@ -488,9 +547,7 @@
 
 
 
-    <!-- =========================================
-         CATEGORIES
-    ========================================== -->
+    <!-- CATEGORIES -->
 
     <section
       id="categories"
@@ -505,18 +562,18 @@
           <div>
 
             <span class="section-label">
-              SHOP BY CATEGORY
+              CATEGORIES
             </span>
 
             <h2>
-              Find your style
+              Shop your way
             </h2>
 
           </div>
 
 
           <p>
-            Explore our most popular categories.
+            Browse products by category.
           </p>
 
         </div>
@@ -532,8 +589,8 @@
             data-category="all"
           >
 
-            <span class="category-icon">
-              ✨
+            <span class="category-number">
+              01
             </span>
 
             <strong>
@@ -541,7 +598,7 @@
             </strong>
 
             <small>
-              Browse everything
+              Explore the complete collection
             </small>
 
           </button>
@@ -553,8 +610,8 @@
             data-category="technology"
           >
 
-            <span class="category-icon">
-              💻
+            <span class="category-number">
+              02
             </span>
 
             <strong>
@@ -562,7 +619,7 @@
             </strong>
 
             <small>
-              Modern essentials
+              Smart everyday technology
             </small>
 
           </button>
@@ -574,8 +631,8 @@
             data-category="audio"
           >
 
-            <span class="category-icon">
-              🎧
+            <span class="category-number">
+              03
             </span>
 
             <strong>
@@ -583,7 +640,7 @@
             </strong>
 
             <small>
-              Listen differently
+              Headphones and speakers
             </small>
 
           </button>
@@ -595,8 +652,8 @@
             data-category="fashion"
           >
 
-            <span class="category-icon">
-              👕
+            <span class="category-number">
+              04
             </span>
 
             <strong>
@@ -604,7 +661,7 @@
             </strong>
 
             <small>
-              Everyday style
+              Modern everyday essentials
             </small>
 
           </button>
@@ -616,8 +673,8 @@
             data-category="home"
           >
 
-            <span class="category-icon">
-              🏠
+            <span class="category-number">
+              05
             </span>
 
             <strong>
@@ -625,7 +682,7 @@
             </strong>
 
             <small>
-              Modern living
+              Products for modern living
             </small>
 
           </button>
@@ -640,9 +697,7 @@
 
 
 
-    <!-- =========================================
-         PRODUCTS
-    ========================================== -->
+    <!-- PRODUCTS -->
 
     <section
       id="products"
@@ -657,50 +712,59 @@
           <div>
 
             <span class="section-label">
-              OUR PRODUCTS
+              SHOP
             </span>
 
             <h2>
-              Featured Collection
+              Our collection
             </h2>
 
           </div>
 
 
           <p>
-            Discover products selected for our modern collection.
+            Quality products selected for everyday use.
           </p>
 
         </div>
 
 
 
-        <!-- Product Toolbar -->
-
         <div class="product-toolbar">
 
 
           <div class="product-search">
 
-            <span>
-              🔍
-            </span>
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle
+                cx="11"
+                cy="11"
+                r="7"
+              ></circle>
+
+              <path
+                d="M20 20l-3.5-3.5"
+              ></path>
+            </svg>
+
 
             <input
               type="search"
               id="product-search"
-              placeholder="Search products..."
+              placeholder="Search the collection..."
               autocomplete="off"
             >
 
           </div>
 
 
-
           <div class="toolbar-right">
 
             <span id="product-count">
-              0 products
+              12 products
             </span>
 
 
@@ -739,36 +803,24 @@
 
 
 
-        <!-- Product Grid -->
-
         <div
           id="product-grid"
           class="product-grid"
-        >
-
-          <!-- JavaScript will generate products here -->
-
-        </div>
+        ></div>
 
 
-
-        <!-- No Results -->
 
         <div
           id="no-products"
           class="no-products"
         >
 
-          <span>
-            🔍
-          </span>
-
           <h3>
             No products found
           </h3>
 
           <p>
-            Try another search or category.
+            Try changing your search or category.
           </p>
 
         </div>
@@ -780,49 +832,51 @@
 
 
 
-    <!-- =========================================
-         PROMO
-    ========================================== -->
+    <!-- PROMOTION -->
 
     <section class="promo-section">
 
       <div class="container">
 
+
         <div class="promo-card">
+
 
           <div>
 
             <span class="section-label">
-              SPECIAL COLLECTION
+              SHOPSPHERE SELECT
             </span>
 
+
             <h2>
-              Upgrade your everyday.
+              Designed for everyday life.
             </h2>
 
+
             <p>
-              Discover simple, modern products designed
-              for work, home and life.
+              Shop modern technology and lifestyle
+              essentials with simple delivery and easy returns.
             </p>
+
 
             <a
               href="#products"
               class="light-button"
             >
-              Explore Products
+              Shop collection
             </a>
 
           </div>
 
 
-          <div
-            class="promo-visual"
-            aria-hidden="true"
-          >
-            ✨
+          <div class="promo-number">
+            2026
           </div>
 
+
         </div>
+
 
       </div>
 
@@ -830,9 +884,7 @@
 
 
 
-    <!-- =========================================
-         ABOUT
-    ========================================== -->
+    <!-- ABOUT -->
 
     <section
       id="about"
@@ -841,14 +893,16 @@
 
       <div class="container about-grid">
 
+
         <div>
 
           <span class="section-label">
-            ABOUT THE PROJECT
+            OUR STORE
           </span>
 
           <h2>
-            A modern front-end shopping experience.
+            Simple shopping.
+            Quality products.
           </h2>
 
         </div>
@@ -857,18 +911,20 @@
         <div class="about-copy">
 
           <p>
-            ShopSphere is a portfolio e-commerce project
-            designed to demonstrate modern front-end
-            development using HTML, CSS and JavaScript.
+            ShopSphere brings technology, audio,
+            fashion and home essentials together
+            in one simple shopping experience.
           </p>
 
+
           <p>
-            The application includes product filtering,
-            search, sorting, favourites, shopping cart
-            functionality and browser storage.
+            Search products, browse categories,
+            save favourites and manage your shopping
+            cart from any device.
           </p>
 
         </div>
+
 
       </div>
 
@@ -879,15 +935,14 @@
 
 
 
-  <!-- =========================================
-       CART DRAWER
-  ========================================== -->
+  <!-- CART DRAWER -->
 
   <aside
     id="cart-drawer"
     class="cart-drawer"
     aria-label="Shopping cart"
   >
+
 
     <div class="drawer-header">
 
@@ -916,16 +971,10 @@
     </div>
 
 
-
     <div
       id="cart-items"
       class="cart-items"
-    >
-
-      <!-- JavaScript will generate cart items -->
-
-    </div>
-
+    ></div>
 
 
     <div
@@ -933,20 +982,15 @@
       class="empty-cart"
     >
 
-      <span>
-        🛒
-      </span>
-
       <h3>
         Your cart is empty
       </h3>
 
       <p>
-        Add some products to get started.
+        Add something from the collection.
       </p>
 
     </div>
-
 
 
     <div class="cart-footer">
@@ -965,7 +1009,7 @@
 
 
       <p>
-        Shipping and taxes calculated at checkout.
+        Shipping calculated at checkout.
       </p>
 
 
@@ -974,16 +1018,15 @@
         id="checkout-button"
         class="checkout-button"
       >
-        Continue to Checkout
+        Continue to checkout
       </button>
 
     </div>
 
+
   </aside>
 
 
-
-  <!-- Cart Overlay -->
 
   <div
     id="drawer-overlay"
@@ -992,14 +1035,11 @@
 
 
 
-  <!-- =========================================
-       WISHLIST DRAWER
-  ========================================== -->
+  <!-- WISHLIST -->
 
   <aside
     id="wishlist-drawer"
     class="wishlist-drawer"
-    aria-label="Wishlist"
   >
 
     <div class="drawer-header">
@@ -1007,7 +1047,7 @@
       <div>
 
         <span class="section-label">
-          SAVED ITEMS
+          SAVED
         </span>
 
         <h2>
@@ -1021,7 +1061,6 @@
         type="button"
         id="close-wishlist"
         class="close-button"
-        aria-label="Close wishlist"
       >
         ×
       </button>
@@ -1032,8 +1071,7 @@
     <div
       id="wishlist-items"
       class="wishlist-items"
-    >
-    </div>
+    ></div>
 
 
     <div
@@ -1041,16 +1079,12 @@
       class="empty-cart"
     >
 
-      <span>
-        ♡
-      </span>
-
       <h3>
-        No saved items
+        Your wishlist is empty
       </h3>
 
       <p>
-        Save products you like and find them here.
+        Save products you would like to return to later.
       </p>
 
     </div>
@@ -1059,9 +1093,7 @@
 
 
 
-  <!-- =========================================
-       PRODUCT MODAL
-  ========================================== -->
+  <!-- PRODUCT MODAL -->
 
   <div
     id="product-modal"
@@ -1074,7 +1106,6 @@
         type="button"
         id="close-product-modal"
         class="close-button modal-close"
-        aria-label="Close product details"
       >
         ×
       </button>
@@ -1083,8 +1114,7 @@
       <div
         id="product-modal-content"
         class="product-modal-content"
-      >
-      </div>
+      ></div>
 
     </div>
 
@@ -1092,24 +1122,18 @@
 
 
 
-  <!-- =========================================
-       TOAST
-  ========================================== -->
+  <!-- TOAST -->
 
   <div
     id="toast"
     class="toast"
     role="status"
     aria-live="polite"
-  >
-    Product added to cart
-  </div>
+  ></div>
 
 
 
-  <!-- =========================================
-       FOOTER
-  ========================================== -->
+  <!-- FOOTER -->
 
   <footer class="footer">
 
@@ -1135,12 +1159,10 @@
 
 
         <p>
-          A modern e-commerce portfolio project
-          built with HTML, CSS and JavaScript.
+          Modern products for everyday life.
         </p>
 
       </div>
-
 
 
       <div>
@@ -1160,11 +1182,10 @@
       </div>
 
 
-
       <div>
 
         <strong>
-          Project
+          Information
         </strong>
 
         <a href="#about">
@@ -1188,7 +1209,7 @@
       </p>
 
       <p>
-        Web Development Portfolio Project
+        Designed and developed by Abu Lashkor
       </p>
 
     </div>
@@ -1196,8 +1217,8 @@
   </footer>
 
 
-
   <script src="script.js"></script>
+
 
 </body>
 
